@@ -21,6 +21,7 @@ html {
 
 #cabeçario>video{
     height: 100%;
+    width: 100vw;
     object-fit: cover;
     position: absolute;
     left: 50%;
@@ -96,7 +97,7 @@ html {
 }
 
 #page-bottom > img {
-    width: 100%;
+    width: 350px;
 }
 
 /* -- -- -- CSS for big screns -- -- -- */
@@ -151,7 +152,7 @@ html {
 }
 #page1>video{
     height: 100%;
-    width: 100%;
+    width: 98.4vw;
     position: absolute;
     z-index: -1;
     object-fit: cover;
@@ -233,6 +234,7 @@ html {
 }
 .Gallery{
     margin-top: 5vh;
+    width: 450px;
     
 }
 
