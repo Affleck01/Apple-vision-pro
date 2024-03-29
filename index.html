@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vision</title>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
     <header id="cabeçario">
-        <video src="imagens/background1.mp4" autoplay muted ></video>
-        <nav id="navbar">
+        <video autoplay muted >
+            <source src="videos/background1.mp4" type="video/mp4">
+        </video>
+        <nav>
             <div>
                 <h3>Vision Pro</h3>
-                <img src="imagens/menu.svg" alt="" onclick="openMenu()" >
+                <img src="imagens/menu.svg" alt="nemu icon" onclick="openMenu()">
             </div>
-            <ul id="listas">
-                <li><img src="imagens/menu.svg" alt="" onclick="closeMenu()" ></li>
+            <ul id="menu">
                 <li><a href="#cabeçario">Home</a></li>
                 <li><a href="">Main</a></li>
                 <li><a href="">Gallery</a></li>
@@ -23,59 +24,51 @@
         </nav>
         <div id="page-bottom">
             <h3>Introduction</h3>
-            <img src="imagens/apple_vision_logo_large.png" alt="">
+            <img src="imagens/apple_vision_logo.png" alt="apple vision logo">
         </div>
     </header>
     <main>
-        <div id="page1">
+        <section id="page1">
             <h1>Welcome to the era of spatial computing</h1>
-            <video src="imagens/background2.mp4" autoplay loop muted></video>
-        </div>
-        <div id="page2">
+            <video autoplay loop muted>
+                <source src="videos/background2.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section id="page2">
             <h2>Technology</h2>
             <h1>Innovation you can <br> see, hear, and feel.</h1>
             <p><span>Pushing boundaries from the inside out.</span> Spatial experiences on Vision Pro are only possible through groundbreaking Apple technology. Displays the size of a postage stamp that deliver more pixels than a 4K TV to each eye. Incredible advances in Spatial Audio. A revolutionary dual‑chip design featuring custom Apple silicon. A sophisticated array of cameras and sensors. All the elements work together to create an unprecedented experience you have to see to believe.
             </p>
-        </div>
-        
-        
-        
-        <div id="page15">
+        </section>
+        <section id="page3">
             <div>
                 <img class="Gallery" src="imagens/glass_top1.jpg" alt="">
                 <img class="Gallery" src="imagens/glass_side1.jpg" alt="">
             </div>
-            <!--
-            <div id="center-page15">
-                <video src="https://www.apple.com//105/media/us/apple-vision-pro/2023/7e268c13-eb22-493d-a860-f0637bacb569/anim/glass/large_2x.mp4" autoplay loop muted ></video>
+            
+            <div id="center-page3">
+                <video src="https://www.apple.com/105/media/us/apple-vision-pro/2023/7e268c13-eb22-493d-a860-f0637bacb569/anim/visionos/large.mp4" autoplay loop muted ></video>
             </div>
-            -->
-        </div>
-        <div id="page16">
-        <h2>A singular piece of <span>three-dimensionally formed laminated glass</span> acts as an optical surface for the cameras and sensors that view the world. It flows seamlessly into a custom aluminum alloy frame that gently curves to wrap around your face while serving as an attachment point for the <span>Light Seal.</span></h2>
-        <img src="https://www.apple.com/v/apple-vision-pro/a/images/overview/design/light_seal__fo87cv0zkcmm_large.jpg" alt="">
-        <button>+ Learn more about design</button>
-           </div>
+        </section>
+        <section id="page4">
+            <img src="https://www.apple.com/v/apple-vision-pro/a/images/overview/design/light_seal__fo87cv0zkcmm_large.jpg" alt="">
+        </section>
     </main>
-   
-
-   <div id="page6">
+   <footer id="page5">
     <h3>Design</h3>
-    <h1>Designed by Apple.</h1>
-    <p>Apple Vision Pro is the result of decades of experience designing high‑performance, mobile, and wearable devices — culminating in the most ambitious product Apple has ever created. Vision Pro integrates incredibly advanced technology into an elegant, compact form, resulting in an amazing experience every time you put it on.
-
-        Enclosure. A singular piece of three-dimensionally formed laminated glass flows into an aluminum alloy frame that curves to wrap around your face.
-        Light Seal. The Light Seal</p>
-   </div>
+    <h1>Designed by Affleck.</h1>
+    <p>Apple Vision Pro is the result of decades of experience designing high‑performance, mobile, and wearable devices — culminating in the most ambitious product Apple has ever created. Vision Pro integrates incredibly advanced technology into an elegant, compact form, resulting in an amazing experience every time you put it on. Enclosure. A singular piece of three-dimensionally formed laminated glass flows into an aluminum alloy frame that curves to wrap around your face.</p>
+   </footer>
 
 
 
     <script>
         function openMenu() {
-            listas.style.display = 'block'
-        }
-        function closeMenu() {
-            listas.style.display = 'none'
+            if (menu.style.display == 'none'){
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
         }
     </script>
     </body>
